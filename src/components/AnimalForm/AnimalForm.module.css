@@ -1,0 +1,41 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 24px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input {
+    width: 100%;
+}
+
+.select {
+    width: 100%;
+}
+
+.textArea {
+    width: 100%;
+    resize: none;
+}
+
+.radioGroup {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+@media (max-width: 768px) {
+    .form {
+        padding: 16px;
+    }
+
+    .radioGroup {
+        flex-direction: column;
+        align-items: stretch;
+    }
+} 

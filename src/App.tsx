@@ -15,7 +15,7 @@ const App: React.FC = () => {
         <Header />
         <Content style={{
           background: '#f0f2f5',
-          minHeight: 'calc(100vh - 134px)'
+          //minHeight: 'calc(100vh - 134px)'
         }}>
           <Routes>
             <Route path="/" element={<HomePage />} />

@@ -7,7 +7,7 @@ export const HomePage: React.FC = () => {
     return (
         <div style={{
             padding: '50px',
-            maxWidth: '1200px',
+            maxWidth: '100vw',
             margin: '0 auto'
         }}>
             <Card>

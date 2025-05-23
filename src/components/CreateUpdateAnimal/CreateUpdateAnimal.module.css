@@ -1,0 +1,27 @@
+.modal {
+    :global(.ant-modal-body) {
+        padding: 24px;
+    }
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid #f0f0f0;
+}
+
+@media (max-width: 768px) {
+    .modal {
+        :global(.ant-modal-body) {
+            padding: 16px;
+        }
+    }
+
+    .actions {
+        flex-direction: column;
+        gap: 12px;
+    }
+} 

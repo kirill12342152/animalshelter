@@ -1,0 +1,70 @@
+.header {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: clamp(8px, 2vw, 16px) clamp(16px, 3vw, 50px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-weight: bold;
+    margin-right: clamp(16px, 2vw, 30px);
+    white-space: nowrap;
+}
+
+.menu {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu :global(.ant-menu) {
+    display: flex;
+    align-items: center;
+}
+
+.menu :global(.ant-menu-item) {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 clamp(8px, 1.5vw, 16px) !important;
+}
+
+.menu :global(.anticon) {
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 8px 16px;
+    }
+
+    .logo {
+        font-size: 1rem;
+        margin-right: 16px;
+    }
+
+    .menu :global(.ant-menu-item) {
+        padding: 0 8px !important;
+    }
+
+    .menu :global(.anticon) {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 0.9rem;
+        margin-right: 12px;
+    }
+
+    .menu :global(.ant-menu-item) {
+        padding: 0 6px !important;
+    }
+
+    .menu :global(.anticon) {
+        font-size: 1.2rem;
+    }
+} 

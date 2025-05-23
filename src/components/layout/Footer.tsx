@@ -8,10 +8,15 @@ export const Footer: React.FC = () => {
         <AntFooter style={{
             textAlign: 'center',
             background: '#fff',
-            padding: '20px 50px',
+            padding: '15px 50px',
             boxShadow: '0 -2px 8px rgba(0,0,0,0.1)'
         }}>
-            Hello World
+            <div style={{
+                fontSize: '16px',
+
+            }}>
+                Разработал Рыбкин Кирилл 2025
+            </div>
         </AntFooter>
     );
 }; 

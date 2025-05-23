@@ -1,0 +1,33 @@
+.uploader {
+    margin: 16px 0;
+}
+
+.uploader :global(.ant-upload-select) {
+    width: 128px !important;
+    height: 58px !important;
+}
+
+.uploader :global(.ant-upload-list-item) {
+    width: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+}
+
+.uploader :global(.ant-upload-list-item-thumbnail) {
+    width: auto !important;
+    height: auto !important;
+    max-width: 100% !important;
+    max-height: 400px !important;
+    object-fit: contain;
+}
+
+@media (max-width: 480px) {
+    .uploader :global(.ant-upload-select) {
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    .uploader :global(.ant-upload-list-item-thumbnail) {
+        max-height: 300px !important;
+    }
+} 
