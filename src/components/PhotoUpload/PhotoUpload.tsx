@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Upload, message } from 'antd';
-import { PlusOutlined } from '@ant-design/icons';
 import type { UploadFile } from 'antd/es/upload/interface';
 import { uploadPhoto, deletePhoto, getPhotoUrl } from '../../services/uploadPhoto';
 import { config } from '../../config';
-import styles from './PhotoUpload.module.css';
 
 interface PhotoUploadProps {
     initialPhoto?: string;
@@ -58,7 +56,7 @@ export const PhotoUpload: React.FC<PhotoUploadProps> = ({
         <Upload
             name="file"
             listType="picture-card"
-            className={styles.uploader}
+            //className={styles.uploader}
             showUploadList={{ showRemoveIcon: allowDelete }}
             action={`${config.apiUrl}/UploadPhoto/upload-photo`}
             onChange={handleChange}
@@ -67,9 +65,8 @@ export const PhotoUpload: React.FC<PhotoUploadProps> = ({
             accept="image/*"
         >
             {fileList.length === 0 && (
-                <div>
-                    <PlusOutlined />
-                    <div style={{ marginTop: 8 }}>Загрузить фото</div>
+                <div style={{ padding: '0 10px'}}>
+                    Загрузить фото
                 </div>
             )}
         </Upload>

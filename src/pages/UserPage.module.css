@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 140px);
+    padding: 20px;
+    background: #f0f2f5;
+}
+
+.card {
+    width: 100%;
+    max-width: clamp(250px, 70vw, 450px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+    margin-bottom: clamp(10px, 2vw, 24px) !important;
+}
+
+.form {
+    margin-top: 24px;
+}
+
+.form :global(.ant-form-item) {
+    margin-bottom: 24px;
+}
+
+.form :global(.ant-input-affix-wrapper) {
+    padding: 10px 15px;
+}
+
+.form :global(.ant-btn) {
+    height: 40px;
+    font-size: clamp(14px, 2vw, 20px);
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 16px;
+    }
+
+    .card {
+        box-shadow: none;
+    }
+} 

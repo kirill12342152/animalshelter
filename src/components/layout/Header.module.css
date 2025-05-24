@@ -27,7 +27,6 @@
 .menu :global(.ant-menu-item) {
     display: flex;
     align-items: center;
-    gap: 8px;
     padding: 0 clamp(8px, 1.5vw, 16px) !important;
 }
 
